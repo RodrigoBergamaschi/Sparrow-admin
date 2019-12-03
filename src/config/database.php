@@ -2,6 +2,10 @@
 
 class Database
 {
+    public function __construct()
+    {
+        getConection();
+    }
 
     public static function getConection()
     { //primeiro pego o caminho do arquivo de configuração
